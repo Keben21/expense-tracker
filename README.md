@@ -76,6 +76,8 @@ You can use Postman or another API testing tool to test the endpoints.
 | POST   | `/api/auth/forgot-password` | Request a password reset token via email                    |
 | POST   | `/api/auth/reset-password`  | Reset password using the emailed token                      |
 
+**Note:** Resend's free tier only allows sending emails to the account owner's own registered email address until a domain is verified. If you clone this project, password reset emails will only arrive at the email you signed up to Resend with, using your own `RESEND_API_KEY`. Verifying a domain removes this restriction.
+
 ### Categories
 
 All category routes require a valid access token.
